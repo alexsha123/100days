@@ -107,7 +107,7 @@
             button.innerText = `Day ${i}`;
             if (i <= unlockedDays) {
                 button.classList.add("active");
-                button.onclick = () => window.open(`https://drive.google.com/file/d/1EG6cvEKXgoZI27TYx00WjVUM9nNNPZML/view?usp=drive_link/day${i}`, "_blank");
+                button.onclick = () => window.open(`https://drive.google.com/file/d/1EG6cvEKXgoZI27TYx00WjVUM9nNNPZML/view?usp=drive_link&day=${i}`, "_blank");
             } else {
                 button.classList.add("locked");
                 button.setAttribute("data-day", i);
